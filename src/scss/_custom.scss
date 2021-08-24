@@ -1,0 +1,28 @@
+// Here you can add other styles
+// Here you can add other styles
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../views/pages/login/fonts/poppins/Poppins-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../views/pages/login/fonts/poppins/Poppins-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../views/pages/login/fonts/poppins/Poppins-Medium.ttf');
+  }
+  
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url('../views/pages/login/fonts/montserrat/Montserrat-Bold.ttf');
+  }
+  
+  body,
+  html {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif;
+  }
+  
