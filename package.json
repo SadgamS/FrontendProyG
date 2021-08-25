@@ -2,7 +2,6 @@
   "name": "frontendproyg",
   "version": "3.2.1",
   "description": "Frontend Proyecto de Grado",
-
   "dependencies": {
     "@coreui/chartjs": "^2.0.0",
     "@coreui/coreui": "^3.4.0",

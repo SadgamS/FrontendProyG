@@ -13,6 +13,7 @@ import {
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
 import { cilAccountLogout, cilUserPlus } from "@coreui/icons";
+import useUser from "src/hooks/useUser";
 
 // routes config
 import routes from "../routes";
@@ -42,6 +43,13 @@ const TheHeader = () => {
     dispatch({ type: "set", sidebarShow: val });
   };
 
+  const {logout} = useUser();
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    logout()
+  }
+
   return (
     <CHeader withSubheader>
       <CToggler
@@ -64,7 +72,7 @@ const TheHeader = () => {
           <CIcon content={cilUserPlus} alt="Perfil" />
           &nbsp;Perfil de usuario
         </CHeaderNavLink>
-        <CHeaderNavLink to="#">
+        <CHeaderNavLink onClick={handleClick}>
           <CIcon content={cilAccountLogout} alt="Salir" />
           &nbsp;Cerrar Sesión
         </CHeaderNavLink>
